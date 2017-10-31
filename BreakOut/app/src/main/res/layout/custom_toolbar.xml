@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_action_bar_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@android:color/background_dark"
+        >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70">
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:text="Ball Speed Controller"
+                android:id="@+id/textView2" />
+            <SeekBar
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:id="@+id/seekBar" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/play_button"
+                android:id="@+id/playButton"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pause_button"
+                android:id="@+id/pauseButton"
+                android:layout_gravity="center_vertical"
+                />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:src="@drawable/icon_top_10"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
+
+
+    </LinearLayout>
+    </android.support.v7.widget.Toolbar>
